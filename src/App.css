@@ -1,0 +1,449 @@
+.page {
+  min-height: 100vh;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  color: #1f2328;
+}
+
+.header-user {
+  font-weight: 600;
+}
+
+.search {
+  width: 260px;
+  padding: 6px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+}
+
+.icon-btn {
+  border: 1px solid #d0d7de;
+  background: #fff;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+/* tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 24px;
+  border-bottom: 1px solid #d0d7de;
+  overflow-x: auto;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 12px 10px;
+  cursor: pointer;
+  color: #1f2328;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.tab.active {
+  font-weight: 600;
+  border-bottom-color: #fd8c73;
+}
+
+.count {
+  margin-left: 6px;
+  background: #f6f8fa;
+  border-radius: 10px;
+  padding: 1px 7px;
+  font-size: 12px;
+}
+
+/* layout */
+.layout {
+  display: flex;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 1px solid #d0d7de;
+}
+
+.name {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.username {
+  color: #656d76;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.bio {
+  white-space: pre-line;
+  margin-bottom: 12px;
+}
+
+.edit-btn,
+.more-btn {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #d0d7de;
+  background: #f6f8fa;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.follow-row {
+  margin: 14px 0;
+  color: #656d76;
+}
+
+.info-list {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.side-block {
+  margin-top: 20px;
+}
+
+.side-block h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.badges,
+.orgs {
+  display: flex;
+  gap: 8px;
+}
+
+.badge,
+.org-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.org-box {
+  background: #7c3aed;
+  border-radius: 6px;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-head,
+.contrib-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-head h2,
+.contrib-head h2,
+.contrib-activity h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.muted {
+  color: #656d76;
+  font-size: 12px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.repo-card {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.repo-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.repo-top a {
+  font-weight: 600;
+}
+
+.visibility {
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #656d76;
+}
+
+.forked,
+.repo-desc,
+.lang {
+  color: #656d76;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* contribution graph */
+.contrib {
+  margin-top: 28px;
+}
+
+.contrib-body {
+  display: flex;
+  gap: 12px;
+}
+
+.heatmap-wrap {
+  flex: 1;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  color: #656d76;
+  font-size: 12px;
+}
+
+.legend i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.c0 { background: #ebedf0; }
+.c1 { background: #9be9a8; }
+.c2 { background: #40c463; }
+.c3 { background: #30a14e; }
+.c4 { background: #216e39; }
+
+.year-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.year-list button {
+  border: none;
+  background: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.year-list button.active {
+  background: #0969da;
+  color: #fff;
+}
+
+/* activity */
+.activity {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.activity-left {
+  max-width: 280px;
+}
+
+.activity-chart {
+  position: relative;
+  width: 220px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.axis {
+  position: absolute;
+  font-size: 12px;
+  color: #656d76;
+}
+
+.axis.top { top: 0; left: 50%; transform: translateX(-50%); }
+.axis.bottom { bottom: 0; left: 50%; transform: translateX(-50%); }
+.axis.left { left: 0; top: 50%; }
+.axis.right { right: 0; top: 50%; }
+
+.chart-dot {
+  width: 8px;
+  height: 8px;
+  background: #40c463;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+
+.contrib-activity {
+  margin-top: 28px;
+}
+
+.contrib-activity h3 {
+  margin: 12px 0;
+}
+
+.contrib-activity p,
+.contrib-activity li {
+  margin: 8px 0;
+}
+
+.contrib-activity ul {
+  list-style: none;
+  margin-left: 16px;
+}
+
+.contrib-activity li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.merged {
+  color: #8250df;
+}
+
+.open {
+  color: #1a7f37;
+}
+
+.empty-tab {
+  padding: 40px 0;
+  color: #656d76;
+}
+
+.loading,
+.error {
+  padding: 20px 0;
+}
+
+.footer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 24px;
+  border-top: 1px solid #d0d7de;
+  color: #656d76;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #656d76;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search {
+    width: 140px;
+  }
+
+  .contrib-body,
+  .activity {
+    flex-direction: column;
+  }
+
+  .year-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 12px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .layout {
+    padding: 16px;
+  }
+}
